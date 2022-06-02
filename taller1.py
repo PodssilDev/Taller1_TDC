@@ -8,9 +8,9 @@ prolog = Prolog()
 prolog.consult("base.pl")
 
 respuesta_1 = input("¿Prefiere un artista Exponente o Underground?: ")
-respuesta_2 = input("¿Prefiere una cancion larga, corta o media?: ")
+respuesta_2 = input("¿Prefiere una cancion larga, corta o normal?: ")
 respuesta_3 = input("¿Prefiere una cancion de antes o despues de la decada de los 2000?:")
-respuesta_4 = input("Prefiere una banda o un cantante en solitario?:")
+respuesta_4 = input("¿Prefiere una banda o un cantante en solitario?:")
 
 no_encontrado = False # Se va a utilizar para el caso alternativo
 
@@ -67,7 +67,7 @@ else:
     else:
         print("Se encontraron las siguientes canciones: ")
     for respuesta in lista_respuestas:
-        print(respuesta["Cancion"])
+        print(respuesta["Cancion"],"|", respuesta["Genero"])
 
 
 # Primero realizar las consultas, procurarse que funcione sin interfaz
