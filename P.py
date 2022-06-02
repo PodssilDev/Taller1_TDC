@@ -6,14 +6,16 @@ import os
 
 #Listas de opciones
 opciones1 = ["Duración corta","Duración Media","Duración Larga"]
-opciones2 = ["algo1","algo2","algo3"]
-opciones3 = ["algo1","algo2","algo3"]
+opciones2 = ["Exponente","Underground"]
+opciones3 = ["Moderna","Clasica"]
+opciones4 = ["Cantante","Banda"]
 
 #Listas que Contienen las opciones
-Lista_suprema = [opciones1, opciones2, opciones3]
+Lista_suprema = [opciones1, opciones2, opciones3, opciones4]
 
-Lista = ["Duracion", "genero", "ETC"]
+Lista = ["Duración","Reconocimiento","Epoca","Cantante o Banda"]
 Lista_de_entradas = []
+
 
 def recivir():
     for clicked1 in Lista_de_entradas:
@@ -22,7 +24,7 @@ def recivir():
 
 #La pantalla del Programa
 root = tk.Tk()
-root.geometry("600x500")
+root.geometry("1200x500")
 
 #El fondo del programa
 canvas = tk.Canvas(root , bg="#EA7600")
@@ -61,6 +63,13 @@ entradas.grid(row=(2*len(Lista))+4, columnspan=2, ipadx=10, ipady=10 ,sticky=tk.
 #boton que guarda las encuesta
 summit = tk.Button(frame, text="Summit", padx=10, pady=5, fg = "black", bg = "white", command=recivir)
 summit.grid(padx=2 , pady=2,row=(2*len(Lista))+5, columnspan=2)
+
+
+#aqui agrgar una funcion que cuando encuentre una respuesta la escriba sobre esto
+salida_texto = "Salida"
+
+salida= tk.Label(frame, text= salida_texto, bg = "white", width=67)
+salida.grid( row=0, rowspan=(2*len(Lista))+5, column = 2, sticky=tk.N ,ipadx = 10,ipady = 10)
 
 
 '''
