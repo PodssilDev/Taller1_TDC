@@ -12,7 +12,7 @@ respuesta_2 = input("¿Prefiere una cancion larga, corta o media?: ")
 respuesta_3 = input("¿Prefiere una cancion de antes o despues de la decada de los 2000?:")
 respuesta_4 = input("Prefiere una banda o un cantante en solitario?:")
 
-no_encontrado = False
+no_encontrado = False # Se va a utilizar para el caso alternativo
 
 if respuesta_1 == "exponente":
     tipo_artista = "exponente"
