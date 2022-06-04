@@ -158,6 +158,8 @@ def recivir():
     caracteristicas_extras = reconocer_caracteristica(Lista_de_salida[4])
     resultados = songQuery(tipo_artista, duracion, decada, solista_banda, caracteristicas_extras)
     i = 0
+    if(resultados == []):
+        resultados = gustosSimilares([tipo_artista, duracion, decada, solista_banda, caracteristicas_extras])
     listbox.insert(tk.END, "Resultados: ")
     listbox.insert(tk.END, "Su genero preferido es: " + resultados[0]["Genero"].upper())
     listbox.insert(tk.END, "Canciones recomendadas: ")
@@ -188,7 +190,7 @@ def gustosSimilares(datos):
             return respuestas
         d = datos
         d[i] = "_"      
-        respuestas = songQuery(d[0], d[1], d[2], d[3])
+        respuestas = songQuery(d[0], d[1], d[2], d[3], d[4])
 
 def entrega_cancion(V, Genero, lista_cancion):
     if(V):
