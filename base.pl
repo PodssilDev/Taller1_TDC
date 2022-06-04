@@ -97,7 +97,7 @@ song("Edvard Grieg - Peer Gynt Opus 23", clasica, exponente, larga, antigua, ban
 song("Gioachino Rossini - William Tell overture", clasica, exponente, larga, antigua, banda, sinfonia).
 song("Bach - Cello suite No. 4 in E-flat major", clasica, exponente, larga, antigua, solista, sinfonia).
 song("Gaspar Cassado - Suite for Cello Solo", clasica, exponente, larga, antigua, solista, sinfonia).
-%% -------------------------------------------------COUNTRY------------------------------------------------
+% -------------------------------------------------COUNTRY------------------------------------------------
 song("John Denver - Take Me Home, Country Roads", country, exponente, normal, setentas, solista, armonias_vocales).
 song("Dolly Parton - Jolene", country, underground, corta, setentas, solista, armonias_vocales).
 song("Willie Nelson - Always In My Mind", country, exponente, normal, noventas, solista, armonias_vocales).
