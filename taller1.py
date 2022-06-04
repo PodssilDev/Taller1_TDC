@@ -181,15 +181,23 @@ def generoMasRepetido(respuestas):
     return mode([r["Genero"] for r in respuestas])
 
 def cancionesGenero(respuestas, genero):
-    return [r["Cancion"] for r in respuestas if r["Genero"] == genero]
+    return [r for r in respuestas if r["Genero"] == genero]
 
 def gustosSimilares(datos):
     respuestas = []
-    for i in range(0, len(datos)):
+    for i in range(0, len(datos) - 1):
+        #Remplaza solo una opcion por nada
+        if(respuestas != []):
+            return respuestas
+        d = datos.copy()
+        d[i] = "_"
+        respuestas = songQuery(d[0], d[1], d[2], d[3], d[4])
+    for i in range(0, len(datos) - 1):
+        #Va reemplazando más opciones a medida que avanza
         if(respuestas != []):
             return respuestas
         d = datos
-        d[i] = "_"      
+        d[i] = "_"
         respuestas = songQuery(d[0], d[1], d[2], d[3], d[4])
 
 def entrega_cancion(V, Genero, lista_cancion):
