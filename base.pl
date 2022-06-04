@@ -78,7 +78,7 @@ song("Skrillex - Rock n Roll", electronica, exponente, larga, moderna, solista, 
 song("Skrillex - Scary Monsters and Nice Sprites", electronica, exponente, larga, moderna, solista, sonidos_electronicos).
 song("Martin Garrix - Animals", electronica, exponente, larga, moderna, solista, sonidos_electronicos).
 song("LMFAO - Party Rock Anthem", electronica, exponente, larga, moderna, banda, sonidos_electronicos).
-song("New Order - Elegoia", electronica, exponente, larga, ochentas, banda, sonidos_electronicos).
+song("New Order - Elegia", electronica, exponente, larga, ochentas, banda, sonidos_electronicos).
 song("Low Roar - Ill Keep Coming", electronica, exponente, larga, moderna, banda, sonidos_electronicos).
 song("Hello Venus - Im Ill", electronica, underground, normal, moderna, banda, sonidos_electronicos).
 % --------------------------------------------------CUMBIA-----------------------------------------------
@@ -89,7 +89,7 @@ song("Noche de Brujas - Debería Odiarte", cumbia, exponente, normal, dosmil, ba
 song("Luisko y la Fruta Fresca - Irme a Neptuno", cumbia, underground, larga, moderna, banda, ritmos_movidos).
 song("Leo Rey - Mortal Kumbiat", cumbia, exponente, normal, moderna, solista, ritmos_movidos).
 % ------------------------------------------------CLASICA------------------------------------------------
-song("Ludiwg Beethoven - Sonata per il piano n°12 Quasi una Fantasia. Opera 27,. N°2", clasica, exponente, larga, antigua, banda, sinfonia).
+song("Ludiwg Beethoven - Sonata per il piano No. 12 Quasi una Fantasia. Opera 27,. N°2", clasica, exponente, larga, antigua, banda, sinfonia).
 song("Georg Handel - Messiah HWV 53", clasica, exponente, larga, antigua, banda, sinfonia).
 song("Amadeus Mozart - Serenade No. 13 for strings in G major, K. 525", clasica, exponente, larga, antigua, banda, sinfonia).
 song("Piotr Chaikovski - 1812 overture. Op 49", clasica, exponente, larga, antigua, banda, sinfonia).

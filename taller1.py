@@ -6,9 +6,8 @@ from statistics import mode
 from cProfile import label
 import tkinter as tk
 from tkinter import BOTTOM, filedialog, Text
-import os
 
-#Bloque de Listas
+# Bloque de Listas
 #----------------------------------------------------------------------------
 #Listas de opciones
 opciones1 = ["Exponente","Underground"]
@@ -146,11 +145,12 @@ def reconocer_solista_banda(caso):
 
 def recivir():
     listbox.delete(0,tk.END)
+    no_encontrado = False
     Lista_de_salida = []
     for clicked1 in Lista_de_entradas:
         Lista_de_salida.append(clicked1.get())
     #Lista_de_salida.append(entradas.get())
-    print(Lista_de_salida)
+    # print(Lista_de_salida)
     tipo_artista = reconocer_tipo_artista(Lista_de_salida[0])
     duracion = reconocer_duracion(Lista_de_salida[1])
     decada = reconocer_decada(Lista_de_salida[2])
@@ -160,12 +160,15 @@ def recivir():
     i = 0
     if(resultados == []):
         resultados = gustosSimilares([tipo_artista, duracion, decada, solista_banda, caracteristicas_extras])
+        no_encontrado = True;
     listbox.insert(tk.END, "Resultados: ")
-    listbox.insert(tk.END, "Su genero preferido es: " + resultados[0]["Genero"].upper())
-    listbox.insert(tk.END, "Canciones recomendadas: ")
-    listbox.insert(tk.END, "")
+    listbox.insert(tk.END, "Su genero preferido es: " + generoMasRepetido(resultados).upper())
+    if(no_encontrado == False):
+        listbox.insert(tk.END, "Canciones recomendadas: ")
+    else:
+        listbox.insert(tk.END, "No se encontraron canciones que se acomoden a sus gustos, pero se recomiendan las siguientes canciones: ")
     for i in range(len(resultados)):
-        listbox.insert(tk.END,str(i+1)+". : " +  resultados[i]["Cancion"].decode("utf-8"))
+        listbox.insert(tk.END,str(i+1)+". : " +  resultados[i]["Cancion"].decode("utf-8") + " | " + resultados[i]["Genero"].upper())
         i += 1
 
 
@@ -200,6 +203,9 @@ def gustosSimilares(datos):
         d[i] = "_"
         respuestas = songQuery(d[0], d[1], d[2], d[3], d[4])
 
+'''
+No utilizada por ahora
+'''
 def entrega_cancion(V, Genero, lista_cancion):
     if(V):
         entrega = "El Genero Encontrado: " + Genero +"\n"
@@ -218,9 +224,10 @@ prolog = Prolog()
 prolog.consult("base.pl")
 
 datos = songQuery("exponente", "normal", "moderna", "banda", "tono_medio_guitarra")
-print(datos)
+# print(datos)
 
 root = tk.Tk()
+root.title("Buscador de canciones")
 root.geometry("1200x500")
 root.config(bg = "#1a9e8f")
 listbox = tk.Listbox(root)
