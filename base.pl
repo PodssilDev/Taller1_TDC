@@ -87,7 +87,7 @@ song("Chico Trujillo - Conductor", cumbia, exponente, corta, dosmil, banda, ritm
 song("Los Vikings 5 - Boquita de Caramelo", cumbia, exponente, normal, dosmil, banda, ritmos_movidos).
 song("Noche de Brujas - Debería Odiarte", cumbia, exponente, normal, dosmil, banda, ritmos_movidos).
 song("Luisko y la Fruta Fresca - Irme a Neptuno", cumbia, underground, larga, moderna, banda, ritmos_movidos).
-song("Leo Rey - Mortal Kumbiat", cumbia, exponente, normal, moderna, solista, ritmos_movidos).
+song("Leo Rey - Mortal Kumbia", cumbia, exponente, normal, moderna, solista, ritmos_movidos).
 % ------------------------------------------------CLASICA------------------------------------------------
 song("Ludiwg Beethoven - Sonata per il piano No. 12 Quasi una Fantasia. Opera 27,. N°2", clasica, exponente, larga, antigua, banda, sinfonia).
 song("Georg Handel - Messiah HWV 53", clasica, exponente, larga, antigua, banda, sinfonia).
