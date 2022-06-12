@@ -88,6 +88,9 @@ def reconocer_tipo_artista(caso):
 
         case "Underground": # Underground
             return "underground"
+        
+        case "No estoy seguro": # Caso por defecto
+            return "exponente"
 '''
 Entrada: Una epoca de una musica (string).
 Salida: Un string de la epoca en forma abreviada.
@@ -234,7 +237,7 @@ def gustosSimilares(datos):
 #----------------------------------------------------------------------------
 
 #Listas de opciones a elegir en la interfaz grafica
-opciones1 = ["Exponente","Underground"] # Reconocimiento Artista
+opciones1 = ["Exponente","Underground", "No estoy seguro"] # Reconocimiento Artista
 opciones2 = ["Duración Corta","Duración Normal","Duración Larga"] # Duracion
 opciones3 = ["Decada Moderna","Los 2000s","Los 90s","Los 80s","Los 70s","Clasica"] # Decada
 opciones4 = ["Solista","Banda"] # Solitario o Banda
@@ -273,7 +276,7 @@ listbox.place(relx = 0.01, rely = 0.1, relwidth = 0.7, relheight= 0.7) # Se ajus
 clicked1 = tk.StringVar() # Se crea una variable para guardar la opcion elegida en el primer menu
 clicked1.set(lista_suprema[0][0]) # Se asigna un valor inicial a la variable
 abrir1 = tk.OptionMenu(root, clicked1, *lista_suprema[0]) # Se crea un menu de opciones para el primer menu
-abrir1.place(relx=0.05,rely=0.85) # Se ajusta el tamaño y posicionamiento del primer menu
+abrir1.place(relx=0.03,rely=0.85) # Se ajusta el tamaño y posicionamiento del primer menu
 lista_de_entradas.append(clicked1) # Se agrega la opcion elegida a la lista de entradas
 
 clicked2 = tk.StringVar() # Se crea una variable para guardar la opcion elegida en el segundo menu
