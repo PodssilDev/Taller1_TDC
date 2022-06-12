@@ -260,7 +260,7 @@ lista_suprema = [opciones1, opciones2, opciones3, opciones4, opciones5]
 lista_de_entradas = [] # Lista que contiene las entradas de los usuarios
 
 prolog = Prolog() # Inicializacion de Prolog
-prolog.consult("base.pl") # Se consulta en la base de conocimientos
+prolog.consult("src/base.pl") # Se consulta en la base de conocimientos
 
 root = tk.Tk() # Se inicia la ventana de la interfaz
 root.title("Buscador de canciones") # Se cambia el nombre del titulo de la ventana
