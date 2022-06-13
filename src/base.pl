@@ -3,10 +3,10 @@
 
 % Dominio:
 % Cancion: String
-% Genero, Tipo_Artista, Duracion, Decada, Solista_Banda, Caracteristica: Atomo
+% Genero, Reconocimiento, Duracion, Decada, Solista_Banda, Caracteristica: Atomo
 % Metas Primarias: song
 % Predicados:
-% song(Cancion, Genero, Tipo_Artista, Duracion, Decada, Solista_Banda, Caracteristica). (Aridad = 7)
+% song(Cancion, Genero, Reconocimiento, Duracion, Decada, Solista_Banda, Caracteristica). (Aridad = 7)
 
 % Clausulas
 % Hechos:

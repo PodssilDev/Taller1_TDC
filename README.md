@@ -13,4 +13,4 @@ gáfica
 4. El siguiente paso es elegir las preferencias de música y luego apretar el boton "buscar canciones". El 
 programa mostrará los resultados encontrados, indicando si se encontraron resultados exactos o bien, 
 resultados similares.
-5. Repetir el paso 5 hasta que se desee cerrar la interfaz gráfica, finalizando la ejecución del programa.
+5. Repetir el paso 4 hasta que se desee cerrar la interfaz gráfica, finalizando la ejecución del programa.
