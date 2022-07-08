@@ -18,7 +18,7 @@ pip install pyswip
 ```
 * [Tkinter](https://docs.python.org/es/3/library/tkinter.html)
 
-## Instrucciones de Uso:
+## Instrucciones de Uso
 1. Se debe tener la carpeta src del código, donde dentro de ella deben estar tanto el archivo [base.pl](https://github.com/PodssilDev/Taller1_TDC/blob/main/src/base.pl) 
 y el archivo [taller1.py](https://github.com/PodssilDev/Taller1_TDC/blob/main/src/taller1.py). Para ello, se recomienda hacer clonar el repositorio directamente.:
 ```sh
@@ -30,3 +30,6 @@ gáfica
 programa mostrará los resultados encontrados, indicando si se encontraron resultados exactos o bien, 
 resultados similares.
 4. Repetir el paso 3 hasta que se desee cerrar la interfaz gráfica, finalizando la ejecución del programa.
+
+## Mas información
+Para mas información sobre el desarrollo del programa, o los resultados obtenidos, revisar el [informe](https://github.com/PodssilDev/Taller1_TDC/blob/main/Informe_Grupo3_Teoria_de_la_Computacion.pdf) disponible en el repositorio.
