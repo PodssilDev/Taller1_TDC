@@ -20,7 +20,7 @@ pip install pyswip
 
 ## Instrucciones de Uso:
 1. Se debe tener la carpeta src del código, donde dentro de ella deben estar tanto el archivo [base.pl](https://github.com/PodssilDev/Taller1_TDC/blob/main/src/base.pl) 
-y el archivo [taller1.py]https://github.com/PodssilDev/Taller1_TDC/blob/main/src/taller1.py). Para ello, se recomienda hacer clonar el repositorio directamente.:
+y el archivo [taller1.py](https://github.com/PodssilDev/Taller1_TDC/blob/main/src/taller1.py). Para ello, se recomienda hacer clonar el repositorio directamente.:
 ```sh
 git clone https://github.com/PodssilDev/Taller1_TDC
 ```
